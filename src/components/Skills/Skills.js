@@ -65,7 +65,7 @@ const Skills = () => {
                                     </li>
                                 ))}
                             </ul>
-
+bilal
                         </section>
                     </div>
                 ))}
