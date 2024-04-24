@@ -4,3 +4,7 @@
   --main-red: #b00a1d;
   --dark-red: #bc002c;
 }
+
+body{
+  background-color: var(--main-black);
+}

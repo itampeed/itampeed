@@ -3,6 +3,7 @@ import './home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import heroImage from '../../Sources/Hero Image.png'
 import Skills from '../../components/Skills/Skills'
+import rarrow from '../../Sources/right-arrow.png'
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
             <h3 style={{ color: 'var(--main-red)' }}>Web Developer | Data Scientist</h3>
             <p>Welcome to my portfolio! I'm passionate about creating innovative web experiences and exploring data-driven solutions that would help you with your business or tasks and help me with making my portfolio much stronger</p>
             <div style={{ display: 'flex' }}>
-              <button className='hero-button b1'>Hire me</button>
+              <button className='hero-button b1'>Hire me<span className='rarrow'><img src={rarrow} /></span></button>
               <button className='hero-button b2'>Contact</button>
             </div>
           </div>
@@ -31,6 +32,9 @@ const Home = () => {
       </div>
       <div className='sec-3'>
         <Skills/>
+      </div>
+      <div className='sec-4'>
+
       </div>
 
     </>

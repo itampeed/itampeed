@@ -4,7 +4,9 @@ import wdIcon from '../../Sources/Web-development.png';
 import daIcon from '../../Sources/dashboard.png';
 import gd from '../../Sources/layers.png'
 import bd from '../../Sources/backend.png'
+import da from '../../Sources/analysis.png'
 import dv from '../../Sources/dashboard.png'
+import dp from '../../Sources/work-process.png'
 
 const Skills = () => {
     const skills = [
@@ -31,10 +33,10 @@ const Skills = () => {
         },
         {
             id: 4,
-            name: 'Data Analysis',
-            pic: daIcon,
+            name: 'Data Processing',
+            pic: dp,
             exp: 1,
-            tools: ['Matplot lib', 'Pandas', 'Seaborn', 'Scikit learn', 'TensorFlow']
+            tools: ['Numpy', 'Pandas', 'Beautiful Soup', 'Keras', 'Open Cv']
         },
         {
             id: 5,
@@ -43,7 +45,13 @@ const Skills = () => {
             exp: 1,
             tools: ['Matplot lib', 'Seaborn', 'Power bI', 'Tableau', 'Ms Excel']
         },
-        
+        {
+            id: 6,
+            name: 'Data Analysis',
+            pic: da,
+            exp: 1,
+            tools: ['Matplot lib', 'Pandas', 'Seaborn', 'Scikit learn', 'TensorFlow']
+        }
     ];
 
     return (
@@ -65,6 +73,7 @@ const Skills = () => {
                                     </li>
                                 ))}
                             </ul>
+
                         </section>
                     </div>
                 ))}

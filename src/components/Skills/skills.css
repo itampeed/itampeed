@@ -3,12 +3,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 30px;
+    /* padding: 1.5rem; */
 }
 
-.skill-card {
-    flex: 0 1 calc(30% - 30px); /* Adjust card width to occupy 30% of the container width minus gap */
-    max-width: 250px;
+.skill-card { 
+    width: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,13 +17,14 @@
     background-color: #424141;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    height: 320px;
+    transition: box-shadow 0.3s ease-in-out;
+    height: 300px;
 }
 
 @media (max-width: 992px) {
     .skill-card {
         flex-basis: calc(50% - 30px); /* Two cards per row on medium screens */
+        max-width: 250px;
     }
 }
 
@@ -32,10 +32,6 @@
     .skill-card {
         flex-basis: calc(100% - 30px); /* Single card per row on small screens */
     }
-}
-
-.skill-card:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .skill-card__header {
@@ -46,7 +42,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 0.75s;
 }
 
 .skill-card__icon {
@@ -114,23 +110,24 @@
 .skill-card:hover .skill-card__knowledge li {
     opacity: 1;
     transform: translateX(0);
-    /* transition-delay: 0.25s; */
 }
 
 .skill-card__knowledge li:nth-child(1) {
-    transition-delay: 0.25s; /* Delay for the first li item */
+    transition-delay: 0.2s;
 }
 
 .skill-card__knowledge li:nth-child(2) {
-    transition-delay: 0.5s; /* Delay for the second li item */
+    transition-delay: 0.4s;
 }
 
 .skill-card__knowledge li:nth-child(3) {
-    transition-delay: 0.75s; /* Delay for the third li item */
+    transition-delay: 0.6s;
 }
+
 .skill-card__knowledge li:nth-child(4) {
-    transition-delay: 1s; /* Delay for the third li item */
+    transition-delay: 0.8s;
 }
+
 .skill-card__knowledge li:nth-child(5) {
-    transition-delay: 1.25s; /* Delay for the third li item */
+    transition-delay: 1s;
 }
