@@ -106,12 +106,13 @@
 .about-sec{
     display: flex
 }
-.sec-3{
+.sec-3, .sec4{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--main-white);
+    margin: 10px 0px;
 }
 
 .rarrow{

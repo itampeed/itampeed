@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import heroImage from '../../Sources/Hero Image.png'
 import Skills from '../../components/Skills/Skills'
 import rarrow from '../../Sources/right-arrow.png'
+import Projectshome from '../../components/Projectshome/Projectshome'
 
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
         <Skills/>
       </div>
       <div className='sec-4'>
-
+        <Projectshome/>
       </div>
 
     </>
